@@ -1,0 +1,137 @@
+.whatWeOffers-container {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .whatWeOffers-main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #4d70b5;
+    position: relative;
+  }
+  
+  .whatWeOffers-main-title:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4d70b5, #4d70b5);
+  }
+  
+  .whatWeOffers-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  
+  .whatWeOffer-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatWeOffer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .whatWeOffer-image-container {
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .whatWeOffer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .whatWeOffer-item:hover .whatWeOffer-image {
+    transform: scale(1.05);
+  }
+  
+  .whatWeOffer-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .whatWeOffer-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4d70b5;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .whatWeOffer-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #4d70b5, #4d70b5);
+  }
+  
+  .whatWeOffer-description {
+    color: #666;
+    line-height: 1.6;
+    margin-top: auto;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 768px) {
+    .whatWeOffers-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  
+    .whatWeOffers-main-title {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .whatWeOffers-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .whatWeOffer-item {
+      flex-direction: column;
+    }
+  
+    .whatWeOffer-image-container {
+      height: 220px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .whatWeOffers-container {
+      padding: 5rem 2rem;
+    }
+  
+    .whatWeOffer-title {
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* Alternate layout for larger screens */
+  @media (min-width: 1400px) {
+    .whatWeOffer-item:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+  
+  

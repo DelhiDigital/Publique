@@ -1,0 +1,134 @@
+/* Main Networking Page Section */
+.networking-page {
+  /* padding: 100px 20px; */
+  background: #f9fafc;
+}
+
+.networking-container {
+ /* max-width: 1200px;*/
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.networking-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.networking-text h1 {
+  font-size: 3rem;
+  color: #4d70b5;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.networking-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.networking-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.networking-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* New Networking Content Sections (Half Image + Half Content) */
+.network-section {
+  display: flex;
+  align-items: center;
+  /* padding: 80px 20px; */
+ /* max-width: 1200px;*/
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.network-section.alt {
+  flex-direction: row-reverse;
+}
+
+.network-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.network-content h2 {
+  font-size: 3rem;
+  color: #4d70b5;
+  margin-bottom: 15px;
+}
+
+.network-content p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.network-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.network-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .networking-container,
+  .network-section,
+  .network-section.alt {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+
+  .networking-text h1,
+  .network-content h2 {
+    font-size: 2rem;
+  }
+}
+
+
+.network-content ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  font-size: 18px;
+}
+
+.network-content ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4d70b5;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #4d70b5;
+}

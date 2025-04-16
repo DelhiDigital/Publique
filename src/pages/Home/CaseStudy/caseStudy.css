@@ -1,0 +1,144 @@
+.case-studies-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
+.case-study-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 400px;
+}
+
+.case-study-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.case-study-item:hover img {
+  transform: scale(1.05);
+
+}
+
+.case-study-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+.case-study-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.case-study-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.case-study-link svg {
+  margin-left: 8px;
+}
+
+.case-study-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+
+.modal-container {
+  background-color: #1a1a3a;
+  width: 60%;
+  max-width: 1200px;
+  border-radius: 4px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-image {
+  width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  margin-bottom: 20px;
+}
+
+.modal-content {
+  padding: 40px;
+}
+
+.modal-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.modal-description {
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.modal-section {
+  margin-bottom: 40px;
+}
+
+.modal-section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.modal-section-content {
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .case-studies-container {
+    grid-template-columns: 1fr;
+  }
+}

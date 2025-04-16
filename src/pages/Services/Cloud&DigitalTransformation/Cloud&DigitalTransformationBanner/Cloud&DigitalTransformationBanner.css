@@ -1,0 +1,133 @@
+.CloudDigitalTransformationBanner {
+    position: relative;
+    width: 100%;
+    height: 62vh;
+    overflow: hidden;
+  }
+  
+  /* Background Motion Effect */
+  .CloudDigitalTransformationBanner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  @keyframes scrollBackground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  /* Overlay & Centering */
+  .CloudDigitalTransformationBanner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Content Style */
+  .CloudDigitalTransformationBanner-content{
+    color: white !important;
+    padding: 0 20px;
+    position: relative;
+    max-width: 900px;
+  }
+  
+  .animated-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    white-space: pre;
+  }
+  
+  /* Titles */
+  .CloudDigitalTransformationBanner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  
+  .CloudDigitalTransformationBanner-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  
+  /* CTA Button */
+  .CloudDigitalTransformationBanner-cta {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:white;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(30px);
+    transition: background-color 0.3s;
+  }
+  
+  .CloudDigitalTransformationBanner-cta:hover {
+    color: white;
+    background-color: #4d70b5;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .CloudDigitalTransformationBanner-title {
+      font-size: 2.8rem;
+    }
+  
+    .CloudDigitalTransformationBanner-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .CloudDigitalTransformationBanner {
+      height: 50vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .CloudDigitalTransformationBanner-title {
+      font-size: 2.2rem;
+    }
+  
+    .CloudDigitalTransformationBanner-subtitle {
+      font-size: 1rem;
+    }
+  
+    .CloudDigitalTransformationBanner {
+      height: 45vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .CloudDigitalTransformationBanner-title {
+      font-size: 1.8rem;
+    }
+  
+    .CloudDigitalTransformationBanner-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .CloudDigitalTransformationBanner {
+      height: 40vh;
+    }
+  }
+  
