@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './menu.css';
-import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaBars, FaTimes, FaChevronDown, FaInstagram } from 'react-icons/fa';
-import { MailIcon, PhoneCall, Network, Server, Shield, Cog, PenToolIcon as Tool, Speaker } from 'lucide-react';
+import { FaFacebook, FaLinkedin, FaYoutube, FaBars, FaTimes, FaChevronDown, FaInstagram } from 'react-icons/fa';
+import {  Handshake, NotepadText , PhoneCall, MailIcon, BadgeIndianRupee , Framer , BookUser, Calendar} from 'lucide-react';
 
 const Menu = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -51,13 +51,23 @@ const Menu = () => {
     document.body.style.overflow = 'auto';
   };
 
+  // const services = [
+  //   { icon: <Handshake size={40} />, title: 'Public Relations & Strategic Communications', path: '/services/PublicRelations&StrategicCommunications' },
+  //   { icon: <NotepadText size={40} />, title: 'Content Creation & Copywriting', path: '/services/ContentCreation&Copywriting' },
+  //   { icon: <BadgeIndianRupee size={40} />, title: 'Marketing & Advertising', path: '/services/Marketing&Advertising' },
+  //   { icon: <Framer size={40} />, title: 'Design & Branding', path: '/services/Design&Branding' },
+  //   { icon: <BookUser size={40} />, title: 'Influencer & Social Media Strategy', path: '/services/Influencer&SocialMediaStrategy' },
+  //   { icon: <Calendar size={40} />, title: 'Event Management', path: '/services/EventManagement' }
+  // ];
+
+
   const services = [
-    { icon: <Network size={40} />, title: 'Public Relations & Strategic Communications', path: '/services/PublicRelations&StrategicCommunications' },
-    { icon: <Server size={40} />, title: 'Content Creation & Copywriting', path: '/services/ContentCreation&Copywriting' },
-    { icon: <Shield size={40} />, title: 'Marketing & Advertising', path: '/services/Marketing&Advertising' },
-    { icon: <Cog size={40} />, title: 'Design & Branding', path: '/services/Design&Branding' },
-    { icon: <Speaker size={40} />, title: 'Influencer & Social Media Strategy', path: '/services/Influencer&SocialMediaStrategy' },
-    { icon: <Speaker size={40} />, title: 'Event Management', path: '/services/EventManagement' }
+    { icon: <Handshake size={40} />, title: 'Public Relations & Strategic Communications', path: '#' },
+    { icon: <NotepadText size={40} />, title: 'Content Creation & Copywriting', path: '#' },
+    { icon: <BadgeIndianRupee size={40} />, title: 'Marketing & Advertising', path: '#' },
+    { icon: <Framer size={40} />, title: 'Design & Branding', path: '#' },
+    { icon: <BookUser size={40} />, title: 'Influencer & Social Media Strategy', path: '#' },
+    { icon: <Calendar size={40} />, title: 'Event Management', path: '#' }
   ];
 
   const scrollToCaseStudy = () => {
@@ -108,10 +118,10 @@ const Menu = () => {
             <nav className="desktop-nav">
               <ul className="main-menu">
                 <li className={`menu-item ${isActive('/') ? 'active' : ''}`}>
-                  <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
+                  <Link to="#" className={isActive('/') ? 'active' : ''}>Home</Link>
                 </li>
                 <li className={`menu-item ${isActive('/about') ? 'active' : ''}`}>
-                  <Link to="/about" className={isActive('/about') ? 'active' : ''}>About Us</Link>
+                  <Link to="#" className={isActive('/about') ? 'active' : ''}>About Us</Link>
                 </li>
                 <li className={`menu-item ${isActive('/about') ? 'active' : ''}`}>
                   <Link to="#"  onClick={scrollToCaseStudy} className={isActive('/#') ? 'active' : ''}>Case Studys</Link>
@@ -132,10 +142,10 @@ const Menu = () => {
                   </ul>
                 </li>
                 <li className={`menu-item ${isActive('/career') ? 'active' : ''}`}>
-                  <Link to="/career" className={isActive('/career') ? 'active' : ''}>Careers</Link>
+                  <Link to="#" className={isActive('/career') ? 'active' : ''}>Careers</Link>
                 </li>
                 <li className={`menu-item ${isActive('/contact') ? 'active' : ''}`}>
-                  <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contact</Link>
+                  <Link to="#" className={isActive('/contact') ? 'active' : ''}>Contact</Link>
                 </li>
               </ul>
             </nav>

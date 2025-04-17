@@ -1,14 +1,14 @@
 import React from 'react';
 import './ServicesSectionWithIcons.css';
-import { Network, Server, Shield, Cog, PenTool, Speaker } from 'lucide-react';
+import { Handshake, NotepadText , BadgeIndianRupee , Framer , BookUser, Calendar } from 'lucide-react';
 
 const services = [
-  { name: "Public Relations & Strategic Communications", icon: <Network size={40} color="white" />, link: "/services/PublicRelations&StrategicCommunications" },
-  { name: "Content Creation & Copywriting", icon: <Server size={40} color="white" />, link: "/services/ContentCreation&Copywriting" },
-  { name: "Marketing & Advertising", icon: <Shield size={40} color="white" />, link: "/services/Marketing&Advertising" },
-  { name: "Design & Branding", icon: <Cog size={40} color="white" />, link: "/services/Design&Branding" },
-  { name: "Influencer & Social Media Strategy", icon: <PenTool size={40} color="white" />, link: "/services/Influencer&SocialMediaStrategy" },
-  { name: "Event Management", icon: <Speaker size={40} color="white" />, link: "/services/EventManagement" }
+  { name: "Public Relations & Strategic Communications", icon: < Handshake size={40} color="white" />, link: "/services/PublicRelations&StrategicCommunications" },
+  { name: "Content Creation & Copywriting", icon: <NotepadText size={40} color="white" />, link: "/services/ContentCreation&Copywriting" },
+  { name: "Marketing & Advertising", icon: <BadgeIndianRupee size={40} color="white" />, link: "/services/Marketing&Advertising" },
+  { name: "Design & Branding", icon: <Framer size={40} color="white" />, link: "/services/Design&Branding" },
+  { name: "Influencer & Social Media Strategy", icon: <BookUser size={40} color="white" />, link: "/services/Influencer&SocialMediaStrategy" },
+  { name: "Event Management", icon: <Calendar size={40} color="white" />, link: "/services/EventManagement" }
 ];
 
 const ServicesSectionWithIcons = () => {

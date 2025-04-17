@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './footer.css';
-import { Phone, Mail, MapPin, X } from 'lucide-react';
+import { Phone, Mail, MapPin, X, } from 'lucide-react';
 import { gsap } from 'gsap';
 
 const Footer = () => {
@@ -46,6 +46,21 @@ const Footer = () => {
     });
   };
 
+  const scrollToCaseStudy = () => {
+    console.log("Scrolling to connect section");
+    // Scroll to the connect section smoothly
+    
+    const section = document.querySelector('.case-studies-container');
+    if(!section){
+      console.log("Section not found");
+      
+    }
+    if (section) {
+
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <footer className="footer-section">
@@ -63,7 +78,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-item">
+          <div className="footer-item" style={{marginTop: "-10px"}}>
             <MapPin color="#4d70b5" size={30} />
             <div>
               <p> Publique Pvt. Ltd.</p>
@@ -73,13 +88,26 @@ const Footer = () => {
               <p> Delhi, India  110044.</p>
             </div>
           </div>
+
+
+          <div className="footer-item">
+            <div style={{marginTop: "-20px"}}>
+              <h2>Services</h2>
+              <a href="/"><p>Public Relations & Strategic Communications</p></a>
+              <a href="/"><p>Content Creation & Copywriting</p></a>
+              <a href="/"><p>Marketing & Advertising</p></a>
+              <a href="/"><p>Design & Branding</p></a>
+              <a href="/"><p>Influencer & Social Media Strategy</p></a>
+              <a href="/"><p>Event Management</p></a>
+            </div>
+          </div>
         </div>
 
         <div className="footer-menu">
           <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          {/* <a href="#">Services</a> */}
-          <a href="/contact">Contact</a>
+          <a href="#">About Us</a>
+          {/* <a href="#"  onClick={scrollToCaseStudy} >Case Study</a> */}
+          <a href="#">Contact</a>
         </div>
 
         <div className="footer-bottom">
