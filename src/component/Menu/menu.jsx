@@ -118,7 +118,7 @@ const Menu = () => {
             <nav className="desktop-nav">
               <ul className="main-menu">
                 <li className={`menu-item ${isActive('/') ? 'active' : ''}`}>
-                  <Link to="#" className={isActive('/') ? 'active' : ''}>Home</Link>
+                  <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
                 </li>
                 <li className={`menu-item ${isActive('/about') ? 'active' : ''}`}>
                   <Link to="#" className={isActive('/about') ? 'active' : ''}>About Us</Link>
