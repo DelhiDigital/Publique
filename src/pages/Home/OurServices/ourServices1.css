@@ -24,7 +24,7 @@
     width: 100%;
     max-height: 10%;
     /* object-fit: cover; */
-    height: var(--custom-img-height, auto);
+    height: auto;
     transition: transform 0.3s ease;
   }
   
