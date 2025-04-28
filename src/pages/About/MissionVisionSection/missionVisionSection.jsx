@@ -1,26 +1,31 @@
 import './missionVisionSection.css';
 
-
+ 
 const missionVisionSection = () => {
   return (
     <div className="missionVisionSection-container">
       {/* About Company */}
       <section id="about-our-company" className="missionVisionSection-section missionVisionSection-split-background">
         <div className="missionVisionSection-image-container">
-          <img src="/assets/AboutImage1.png" alt="About" />
+          <img src="/assets/About1.jpg" alt="About" />
         </div>
         <div className="missionVisionSection-content">
-          <h1>About Us</h1>
+          <h1>Our Story</h1>
           <p>
-          With over two decades of expertise in delivering robust IT infrastructure and solutions, 
-          Lexicon Computers has established itself as a reliable technology partner for clients 
-          across diverse industries. In today’s rapidly evolving business landscape, disruptions 
-          are inevitable, often challenging enterprise stability. However, Lexicon Computers 
-          continues to excel by providing timely and efficient services, ensuring seamless operations 
-          and minimizing downtime. Their commitment to excellence has enabled them to build lasting 
-          relationships, guiding businesses towards sustainable growth and digital transformation. 
-          As a trusted partner, Lexicon Computers remains dedicated to empowering enterprises with 
-          innovative solutions for a future-ready technological environment.
+            At <strong>Publiqua</strong>, we believe in the power of storytelling to shape perceptions, 
+            drive engagement, and inspire action. We are a strategic communications consulting firm built
+            on the principle of intentional storytelling  rooted in insight, shaped by creativity, and 
+            driven by results. Our work begins with deep listening. We take the time to understand your 
+            brand, your goals, your challenges and then design communications strategies that  speak 
+            to your audience with clarity and impact.
+            
+          </p>
+          <p>
+          From navigating complex PR landscapes to building digital narratives that inspire action, we approach every project with a consultative mindset and a commitment to excellence.
+          What sets us apart is our ability to think boldly and execute with precision. We don’t just push messages  we build meaning. Every brand we partner with receives a strategy as distinct as their own voice.
+          At Publiqua, your vision is our blueprint.
+          Your ambition fuels our creativity.
+          And your success is the story we’re proud to help tell.
           </p>
         </div>
       </section>
@@ -49,17 +54,17 @@ const missionVisionSection = () => {
         <div className="missionVisionSection-content">
           <h1>Our Values</h1>
           <p>
-           At our core, we are committed to consistently walking the talk and delivering beyond expectations.
-           We strive to be leaders, whether it’s our first attempt or a repeated effort, always pushing 
-           boundaries to achieve excellence. Integrity and ethics are the cornerstones of our approach, 
-           ensuring that every action we take aligns with our promises and core values. We firmly believe 
-           that true leadership is not just about reaching the top but maintaining the highest standards of 
-           honesty, professionalism, and dedication throughout the journey. This unwavering commitment is 
-           what drives us to achieve sustainable growth and success.
+          At <strong>Publiqua</strong>, our values shape everything we do from the strategies we build to the 
+          relationships we nurture. We believe in going beyond the brief, grounding every idea 
+          in insight and purpose. Creativity drives us, but only when it’s authentic and aligned
+          with your goals. We approach every project with precision, treating the smallest details
+          with as much care as the big picture. Collaboration is at the heart of our process we don’t
+          just work for our clients, we work with them. Above all, we are guided by impact. 
+          Because for us, success isn’t just about what we create it’s about what it changes.
           </p>
         </div>
         <div className="missionVisionSection-image-container">
-          <img src="/assets/OurValue1.png" alt="Our Mission" />
+          <img src="/assets/About2.jpg" alt="Our Mission" />
         </div>
       </section>
     </div>

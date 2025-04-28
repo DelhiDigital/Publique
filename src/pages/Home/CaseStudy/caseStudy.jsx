@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './caseStudy.css';
 
 const CaseStudy = () => {
   const [selectedCase, setSelectedCase] = useState(null);
+  const location = useLocation();
   
   // Case studies data
   const caseStudies = [
@@ -120,6 +122,16 @@ const CaseStudy = () => {
   const closeModal = () => {
     setSelectedCase(null);
   };
+
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'case-studies') {
+      const section = document.querySelector('.case-studies-container');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   return (
     <div className="case-studies-section">

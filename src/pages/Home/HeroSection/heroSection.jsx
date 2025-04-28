@@ -29,7 +29,7 @@ export default function HeroSection() {
       id: 3, 
       prefixColor: "#28a745", 
       title: "Marketing & Advertising", 
-      description: "“At Publique, we merge creativity with strategy to create marketing...”",
+      description: "“At Publiqua, we merge creativity with strategy to create marketing...”",
       image: "/assets/hero_3.jpg", 
       link: "/services/Marketing&Advertising" 
     },

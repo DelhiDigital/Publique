@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './menu.css';
 import { FaFacebook, FaLinkedin, FaYoutube, FaBars, FaTimes, FaChevronDown, FaInstagram } from 'react-icons/fa';
-import {  Handshake, NotepadText , PhoneCall, MailIcon, BadgeIndianRupee , Framer , BookUser, Calendar} from 'lucide-react';
+import { Handshake, NotepadText, PhoneCall, MailIcon, BadgeIndianRupee, Framer, BookUser, Calendar } from 'lucide-react';
 
 const Menu = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -14,10 +14,10 @@ const Menu = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
-    
+
     handleResize();
     window.addEventListener('resize', handleResize);
-    
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -51,39 +51,29 @@ const Menu = () => {
     document.body.style.overflow = 'auto';
   };
 
-  // const services = [
-  //   { icon: <Handshake size={40} />, title: 'Public Relations & Strategic Communications', path: '/services/PublicRelations&StrategicCommunications' },
-  //   { icon: <NotepadText size={40} />, title: 'Content Creation & Copywriting', path: '/services/ContentCreation&Copywriting' },
-  //   { icon: <BadgeIndianRupee size={40} />, title: 'Marketing & Advertising', path: '/services/Marketing&Advertising' },
-  //   { icon: <Framer size={40} />, title: 'Design & Branding', path: '/services/Design&Branding' },
-  //   { icon: <BookUser size={40} />, title: 'Influencer & Social Media Strategy', path: '/services/Influencer&SocialMediaStrategy' },
-  //   { icon: <Calendar size={40} />, title: 'Event Management', path: '/services/EventManagement' }
-  // ];
-
-
   const services = [
-    { icon: <Handshake size={40} />, title: 'Public Relations & Strategic Communications', path: '#' },
-    { icon: <NotepadText size={40} />, title: 'Content Creation & Copywriting', path: '#' },
-    { icon: <BadgeIndianRupee size={40} />, title: 'Marketing & Advertising', path: '#' },
-    { icon: <Framer size={40} />, title: 'Design & Branding', path: '#' },
-    { icon: <BookUser size={40} />, title: 'Influencer & Social Media Strategy', path: '#' },
-    { icon: <Calendar size={40} />, title: 'Event Management', path: '#' }
+    { icon: <Handshake size={40} />, title: 'Public Relations & Strategic Communications', path: '/services/PublicRelations&StrategicCommunications' },
+    { icon: <NotepadText size={40} />, title: 'Content Creation & Copywriting', path: '/services/ContentCreation&Copywriting' },
+    { icon: <BadgeIndianRupee size={40} />, title: 'Marketing & Advertising', path: '/services/Marketing&Advertising' },
+    { icon: <Framer size={40} />, title: 'Design & Branding', path: '/services/Design&Branding' },
+    { icon: <BookUser size={40} />, title: 'Influencer & Social Media Strategy', path: '/services/Influencer&SocialMediaStrategy' },
+    { icon: <Calendar size={40} />, title: 'Event Management', path: '/services/EventManagement' }
   ];
 
-  const scrollToCaseStudy = () => {
-    console.log("Scrolling to connect section");
-    // Scroll to the connect section smoothly
-    
-    const section = document.querySelector('.case-studies-container');
-    if(!section){
-      console.log("Section not found");
-      
-    }
-    if (section) {
+  // const scrollToCaseStudy = () => {
+  //   console.log("Scrolling to connect section");
+  //   // Scroll to the connect section smoothly
 
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  //   const section = document.querySelector('.case-studies-container');
+  //   if (!section) {
+  //     console.log("Section not found");
+
+  //   }
+  //   if (section) {
+
+  //     section.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
   return (
     <>
@@ -96,7 +86,7 @@ const Menu = () => {
         </div>
         <div className="contact-info">
           <a href="tel:+02249185900"><PhoneCall size={18} />+91-11-49700111</a>
-          <a href="mailto:info@lexiconindia.com"><MailIcon size={18} /> info@publique.com</a>
+          <a href="mailto:info@lexiconindia.com"><MailIcon size={18} /> info@Publiqua.com</a>
         </div>
       </div>
 
@@ -104,7 +94,7 @@ const Menu = () => {
         <div className="container">
           <div className="menuLogo">
             <Link to="/">
-              <img src="/assets/logo.png" alt="Lexicon" />
+              <img src="/assets/logo.png" alt="Publiqua" />
             </Link>
           </div>
 
@@ -121,10 +111,12 @@ const Menu = () => {
                   <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
                 </li>
                 <li className={`menu-item ${isActive('/about') ? 'active' : ''}`}>
-                  <Link to="#" className={isActive('/about') ? 'active' : ''}>About Us</Link>
+                  <Link to="/about" className={isActive('/about') ? 'active' : ''}>About Us</Link>
                 </li>
-                <li className={`menu-item ${isActive('/about') ? 'active' : ''}`}>
-                  <Link to="#"  onClick={scrollToCaseStudy} className={isActive('/#') ? 'active' : ''}>Case Studys</Link>
+                <li className={`menu-item`}>
+                  <Link to="/" state={{ scrollTo: 'case-studies' }}>
+                    Case Studies
+                  </Link>
                 </li>
                 <li className={`menu-item ${location.pathname.includes('/services') ? 'active' : ''}`}>
                   <span className="menu-label">
@@ -175,8 +167,8 @@ const Menu = () => {
                   <Link to="/about" onClick={handleMobileMenuItemClick} className={isActive('/about') ? 'active' : ''}>About Us</Link>
                 </li>
                 <li className={`mobile-menu-item has-submenu ${location.pathname.includes('/services') ? 'active' : ''}`}>
-                  <div 
-                    className="menu-item-header" 
+                  <div
+                    className="menu-item-header"
                     onClick={() => toggleSubmenu('services')}
                   >
                     <span>Services</span>

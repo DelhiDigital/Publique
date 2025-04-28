@@ -1,149 +1,71 @@
 .aboutBanner {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
+  background-image: url('/assets/AboutBanner.png'); /* Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-}
-
-/* Background Motion Effect */
-.aboutBanner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   object-fit: fill;
-  z-index: 0;
-  pointer-events: none;
 }
 
-
-@keyframes scrollBackground {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Overlay & Centering */
 .aboutBanner-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 35px;
+  right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
   display: flex;
   justify-content: center;
-  align-items:  flex-end; /* Changed from center */
+  align-items: center;
   text-align: center;
 }
 
 .aboutBanner-content {
-  margin-top: 38vh; /* 👈 Adjust this to push the content below the logo */
-  color: white;
+  color: rgb(244, 245, 245);
   padding: 0 20px;
-  position: relative; 
-  max-width: 900px;
+  max-width: 800px;
 }
 
-.aboutBanner-cta {
-  margin-bottom: 20px;
-  display: inline-block;
-  padding: 8px 20px;
-  background-color: white;
-  color: black;
-  font-weight: 600;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 13px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: background-color 0.3s;
-  z-index: 2;
-}
-
-.aboutBanner-cta:hover {
-  background-color: #4d70b5;
-  color: white;
-}
-
-
-.animated-word {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(20px);
-  white-space: pre;
-}
-
-/* Titles */
 .aboutBanner-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 1rem;
-  line-height: 1.3;
+  white-space: pre-wrap;
 }
 
 .aboutBanner-subtitle {
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
-
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .aboutBanner-title {
-    font-size: 2.8rem;
-  }
-
-  .aboutBanner-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .aboutBanner {
-    height: 50vh;
-  }
-  .aboutBanner-cta {
-    margin-top: 200px;
-  }
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
+/* Responsive tweaks */
 @media (max-width: 768px) {
   .aboutBanner-title {
     font-size: 2.2rem;
   }
 
-  .aboutBanner-content {
-    margin-top: 42vh;
-  }
-
   .aboutBanner-subtitle {
     font-size: 1rem;
-  }
-
-  .aboutBanner {
-    height: 45vh;
-  }
-  /* .aboutBanner-cta {
-    margin-top: auto;
-  } */
-}
-
-@media (max-width: 480px) {
-  .aboutBanner-title {
-    font-size: 1.8rem;
-  }
-  .aboutBanner-content {
-    margin-top: 45vh;
-  }
-
-  .aboutBanner-subtitle {
-    font-size: 0.9rem;
-  }
-
-  .aboutBanner {
-    height: 40vh;
   }
 }

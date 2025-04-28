@@ -74,14 +74,14 @@ const Footer = () => {
             <Mail color="#4d70b5" size={30} />
             <div>
               {/* <p>www.lexiconindia.com</p> */}
-              <a href="mailto:info@lexiconindia.com">info@publique.com</a>
+              <a href="mailto:info@lexiconindia.com">info@Publiqua.com</a>
             </div>
           </div>
 
           <div className="footer-item" style={{marginTop: "-10px"}}>
             <MapPin color="#4d70b5" size={30} />
             <div>
-              <p> Publique Pvt. Ltd.</p>
+              <p> Publiqua Pvt. Ltd.</p>
               {/* <p> 24, Papa Industrial Estate,</p>
               <p> 3rd Floor,40, Suren Road,</p> */}
               <p> Saket New Delhi,</p>
@@ -115,7 +115,7 @@ const Footer = () => {
             For Corporate Enquiries Call:
             <a href="tel:+919769878878">+91-11-49700111</a> |
             <span className="request-demo" onClick={() => setShowPopup(true)}> Request A Demo</span>
-            <br />©2025 Publique Pvt. Ltd. All Rights Reserved.
+            <br />©2025 Publiqua Pvt. Ltd. All Rights Reserved.
           </p>
         </div>
 

@@ -124,7 +124,7 @@ const OurServices2 = () => {
       <section className="ourServices2__container">
         <div className="ourServices2__content">
           <h2 className="ourServices2__title">
-            <span className="ourServices2__title-line" ref={line1Ref}>Punlique Public Relation</span>
+            <span className="ourServices2__title-line" ref={line1Ref}>Publiqua Public Relation</span>
             <span className="ourServices2__title-line" ref={line2Ref}>For Tomorrow</span>
           </h2>
           {/* <p className="ourServices2__description" ref={descRef}>
