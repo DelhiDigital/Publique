@@ -112,7 +112,7 @@ const SectorsSection = () => {
       <div className="sector-module-container">
         {/* Added section title */}
         <div className="sector-module-header">
-          <h2 className="sector-module-main-title">Our Sectors</h2>
+          <h2 className="sector-module-main-title">Across Industries </h2>
           <p className="sector-module-subtitle">Specialized expertise across diverse industries</p>
         </div>
         

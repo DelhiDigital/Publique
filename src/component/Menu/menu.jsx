@@ -77,7 +77,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="top-bar">
+      {/* <div className="top-bar">
         <div className="social-links">
           <Link to="#"><FaFacebook /></Link>
           <Link to="#"><FaInstagram /></Link>
@@ -88,7 +88,7 @@ const Menu = () => {
           <a href="tel:+02249185900"><PhoneCall size={18} />+91-11-49700111</a>
           <a href="mailto:info@lexiconindia.com"><MailIcon size={18} /> info@Publiqua.com</a>
         </div>
-      </div>
+      </div> */}
 
       <header className="main-header">
         <div className="container">

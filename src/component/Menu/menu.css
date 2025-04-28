@@ -68,7 +68,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
-  height: 100px;
+  height: 73px;
 }
 
 .menuLogo img {
@@ -113,7 +113,7 @@ ul {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #4d70b5;
+  background-color: #b50d13;
   transition: width 0.3s ease;
 }
 
@@ -128,7 +128,7 @@ ul {
 .menu-item > a.active,
 .menu-item > span.menu-label:hover,
 .menu-item.active > span.menu-label {
-  color: #4d70b5;
+  color: #b50d13;
 }
 
 .dropdown-icon {
@@ -203,7 +203,7 @@ ul {
 /* New hover style to match the screenshot */
 .submenu-item > a:hover,
 .submenu-item.active > a {
-  background-color: #4d70b5;
+  background-color: #ED666D;
   color: white;
 }
 
@@ -214,7 +214,7 @@ ul {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  color: #4d70b5;
+  color: #b50d13;
   transition: all 0.3s ease;
 }
 
@@ -377,6 +377,6 @@ ul {
   }
   
   .container {
-    height: 70px;
+    height: 50px;
   }
 }
