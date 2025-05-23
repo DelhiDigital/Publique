@@ -1,137 +1,71 @@
 .careerBanner {
-    position: relative;
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
-  }
-  
-  
-  /* Background Motion Effect */
-  .careerBanner-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    z-index: 0;
-    pointer-events: none;
-  }
-  
-  
-  @keyframes scrollBackground {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  
-  /* Overlay & Centering */
-  .careerBanner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* Content Style */
-  .careerBanner-content{
-    color: white;
-    padding: 0 20px;
-    position: relative;
-    max-width: 900px;
-  }
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url('/assets/AboutBanner.png'); /* Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: fill;
+}
 
-  .animated-word {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-    white-space: pre;
-  }
-  
-  /* Titles */
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.careerBanner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.careerBanner-content {
+  color: rgb(244, 245, 245);
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.careerBanner-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.careerBanner-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
   .careerBanner-title {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.3;
+    font-size: 2.2rem;
   }
-  
+
   .careerBanner-subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+    font-size: 1rem;
   }
-  
-  /* CTA Button */
-  .careerBanner-cta {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 5px 10px;
-    background-color:white;
-    color: black;
-    font-weight: 600;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 13px;
-    opacity: 0; /* Start hidden for animation */
-    transform: translateY(30px);
-    transition: background-color 0.3s;
-  }
-  
-  .careerBanner-cta:hover {
-    color: white;
-    background-color: #4d70b5;
-  }
-  
-
-
-  /* Responsive Adjustments */
-  @media (max-width: 1024px) {
-    .careerBanner-title {
-      font-size: 52px;
-    }
-  
-    .careerBanner-subtitle {
-      font-size: 17px;
-    }
-  
-    .careerBanner {
-      height: 50vh;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .careerBanner-title {
-      font-size: 38px;
-    }
-  
-    .careerBanner-subtitle {
-      font-size: 16px;
-    }
-  
-    .careerBanner {
-      height: 45vh;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .careerBanner-title {
-      font-size: 20px;
-    }
-  
-    .careerBanner-subtitle {
-      font-size: 15px;
-    }
-  
-    .careerBanner {
-      height: 40vh;
-    }
-  }
-  
+}

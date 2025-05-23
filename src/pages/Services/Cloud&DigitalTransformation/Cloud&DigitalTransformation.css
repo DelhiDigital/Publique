@@ -28,7 +28,7 @@
 
 .cdt-text h2 {
   font-size: 3rem;
-  color: #4d70b5;
+  color: var(--primary-color);
   margin-bottom: 15px;
 }
 

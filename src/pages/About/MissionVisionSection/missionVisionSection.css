@@ -16,7 +16,7 @@
 .missionVisionSection-content *:is(h1, h2) {
     font-size: 48px;
     margin-bottom: 1rem;
-    color: #4d70b5;
+    color: var(--primary-color);
     font-weight: 700;
 }
 

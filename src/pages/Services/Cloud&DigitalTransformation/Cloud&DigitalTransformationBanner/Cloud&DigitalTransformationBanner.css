@@ -85,7 +85,7 @@
   
   .CloudDigitalTransformationBanner-cta:hover {
     color: white;
-    background-color: #4d70b5;
+    background-color: var(--primary-color);
   }
   
   /* Responsive Adjustments */

@@ -1,15 +1,52 @@
+.case-studies-section {
+  width: 100%;
+}
+
 .case-studies-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
   width: 100%;
+}
+
+/* Main grid layout */
+.case-study-item.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.case-study-item.right {
+  grid-column: 2;
+  grid-row: 1 / span 2; /* Spans both rows */
+  height: 100%;
+}
+
+.case-study-item.bottom-left {
+  grid-column: 1;
+  grid-row: 2;
+  width: 50%;
+}
+
+.case-study-item.bottom-right {
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 50%; /* Position in the right half of the bottom-left cell */
+  width: 50%;
 }
 
 .case-study-item {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 400px;
+}
+
+.case-study-item.red-background {
+  background-color: #d32f2f; /* Red background for SOFIT Soya */
+}
+
+.case-study-item:hover .view-case-study {
+  color: #fff;
 }
 
 .case-study-item img {
@@ -21,7 +58,6 @@
 
 .case-study-item:hover img {
   transform: scale(1.05);
-
 }
 
 .case-study-content {
@@ -29,28 +65,36 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 20px;
   color: white;
   z-index: 2;
   text-align: center;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .case-study-content h2 {
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.case-study-link {
+.view-case-study {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 8px;
   color: white;
-  text-decoration: none;
   font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.case-study-link svg {
-  margin-left: 8px;
+.view-case-study svg {
+  transition: transform 0.3s ease;
+}
+
+.case-study-item:hover .view-case-study svg {
+  transform: translateX(5px);
 }
 
 .case-study-overlay {
@@ -59,7 +103,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  z-index: 1;
 }
 
 /* Modal styles */
@@ -79,7 +124,7 @@
 }
 
 .modal-container {
-  background-color: #1a1a3a;
+  background-color: #DC1F26;
   width: 60%;
   max-width: 1200px;
   border-radius: 4px;
@@ -140,5 +185,65 @@
 @media (max-width: 768px) {
   .case-studies-container {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 300px);
+    height: auto;
+  }
+
+  .case-study-item.top-left,
+  .case-study-item.right,
+  .case-study-item.bottom-left,
+  .case-study-item.bottom-right {
+    grid-column: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .case-study-item.top-left {
+    grid-row: 1;
+  }
+
+  .case-study-item.right {
+    grid-row: 2;
+  }
+
+  .case-study-item.bottom-left {
+    grid-row: 3;
+  }
+
+  .case-study-item.bottom-right {
+    grid-row: 4;
+  }
+
+  .case-study-content h2 {
+    font-size: 24px;
+  }
+
+  .modal-container {
+    width: 90%;
+  }
+
+  .modal-title {
+    font-size: 28px;
+  }
+
+  .modal-section-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .case-study-content h2 {
+    font-size: 20px;
+  }
+
+  .view-case-study {
+    font-size: 14px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+
+  .modal-section-title {
+    font-size: 20px;
   }
 }

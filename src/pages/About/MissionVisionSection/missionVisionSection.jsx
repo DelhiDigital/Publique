@@ -7,32 +7,27 @@ const missionVisionSection = () => {
       {/* About Company */}
       <section id="about-our-company" className="missionVisionSection-section missionVisionSection-split-background">
         <div className="missionVisionSection-image-container">
-          <img src="/assets/About1.jpg" alt="About" />
+          <img src="/assets/About1.webp" alt="About" />
         </div>
         <div className="missionVisionSection-content">
-          <h1>Our Story</h1>
+          <h1><strong>Our Story</strong></h1>
           <p>
-            At <strong>Publiqua</strong>, we believe in the power of storytelling to shape perceptions, 
-            drive engagement, and inspire action. We are a strategic communications consulting firm built
-            on the principle of intentional storytelling  rooted in insight, shaped by creativity, and 
-            driven by results. Our work begins with deep listening. We take the time to understand your 
-            brand, your goals, your challenges and then design communications strategies that  speak 
-            to your audience with clarity and impact.
-            
+            At <strong>Publiqua</strong>, we believe in the power of <strong>storytelling</strong> to shape <strong>perceptions</strong>, 
+            drive <strong>engagement</strong>, and inspire <strong>action</strong>. We are a <strong>strategic communications consulting firm</strong> built
+            on the principle of <strong>intentional storytelling</strong>—rooted in <strong>insight</strong>, shaped by <strong>creativity</strong>, and 
+            driven by <strong>results</strong>. Our work begins with <strong>deep listening</strong>. We take the time to understand your 
+            <strong>brand</strong>, your <strong>goals</strong>, your <strong>challenges</strong>, and then design <strong>communications strategies</strong> that speak 
+            to your <strong>audience</strong> with <strong>clarity</strong> and <strong>impact</strong>.
           </p>
           <p>
-          From navigating complex PR landscapes to building digital narratives that inspire action, we approach every project with a consultative mindset and a commitment to excellence.
-          What sets us apart is our ability to think boldly and execute with precision. We don’t just push messages  we build meaning. Every brand we partner with receives a strategy as distinct as their own voice.
-          At Publiqua, your vision is our blueprint.
-          Your ambition fuels our creativity.
-          And your success is the story we’re proud to help tell.
+            From navigating <strong>complex PR landscapes</strong> to building <strong>digital narratives</strong> that inspire <strong>action</strong>, we approach every project with a <strong>consultative mindset</strong> and a commitment to <strong>excellence</strong>.
+            What sets us apart is our ability to think <strong>boldly</strong> and execute with <strong>precision</strong>. We don’t just push <strong>messages</strong>—we build <strong>meaning</strong>. Every brand we partner with receives a <strong>strategy</strong> as distinct as their own <strong>voice</strong>.
+            At <strong>Publiqua</strong>, your <strong>vision</strong> is our <strong>blueprint</strong>.
+            Your <strong>ambition</strong> fuels our <strong>creativity</strong>.
+            And your <strong>success</strong> is the <strong>story</strong> we’re proud to help tell.
           </p>
         </div>
       </section>
-
-      
-
-      {/* What We Do */}
       {/* <section id="what-we-do" className="missionVisionSection-section missionVisionSection-split-background">
         <div className="missionVisionSection-content">
           <h2>WHAT WE DO</h2>
@@ -50,17 +45,10 @@ const missionVisionSection = () => {
 
       {/* Our Values */}
       <section id="our-values" className="missionVisionSection-section missionVisionSection-split-background">
-        
         <div className="missionVisionSection-content">
           <h1>Our Values</h1>
           <p>
-          At <strong>Publiqua</strong>, our values shape everything we do from the strategies we build to the 
-          relationships we nurture. We believe in going beyond the brief, grounding every idea 
-          in insight and purpose. Creativity drives us, but only when it’s authentic and aligned
-          with your goals. We approach every project with precision, treating the smallest details
-          with as much care as the big picture. Collaboration is at the heart of our process we don’t
-          just work for our clients, we work with them. Above all, we are guided by impact. 
-          Because for us, success isn’t just about what we create it’s about what it changes.
+            At <strong>Publiqua</strong>, our <strong>values</strong> are the foundation of every <strong>strategy</strong> we craft and every <strong>relationship</strong> we build. We are committed to going <strong>beyond the brief</strong>, ensuring every idea is anchored in <strong>insight</strong> and <strong>purpose</strong>. <strong>Creativity</strong> is our driving force—always authentic, always aligned with your <strong>goals</strong>. We approach every project with <strong>precision</strong>, treating every detail with the same care as the big picture. <strong>Collaboration</strong> is at the heart of our process; we don’t just work for our clients, we work <strong>with</strong> them. Above all, we are guided by <strong>impact</strong>—because for us, <strong>success</strong> is measured not only by what we create, but by the <strong>change</strong> we inspire.
           </p>
         </div>
         <div className="missionVisionSection-image-container">

@@ -1,131 +1,49 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Link } from "react-router-dom";
 import "./contactBanner.css";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const ContactBanner = () => {
   const titleRef = useRef(null);
-  const subtitleRef = useRef(null);
-  const buttonRef = useRef(null);
 
   useEffect(() => {
-    const animateByWord = (elementRef) => {
+    const animateByLetter = (elementRef) => {
       const text = elementRef.current.textContent.trim();
-      const words = text.split(" ");
+      const letters = text.split("");
       elementRef.current.innerHTML = "";
-  
-      words.forEach((word, index) => {
-        const wordWrapper = document.createElement("span");
-        wordWrapper.className = "animated-word";
-        wordWrapper.textContent = word;
-  
-        elementRef.current.appendChild(wordWrapper);
-        if (index < words.length - 1) {
-          elementRef.current.appendChild(document.createTextNode(" "));
-        }
+
+      letters.forEach((letter) => {
+        const span = document.createElement("span");
+        span.className = "animated-letter";
+        span.textContent = letter === " " ? "\u00A0" : letter; // preserve white space
+        elementRef.current.appendChild(span);
       });
-  
-      return elementRef.current.querySelectorAll(".animated-word");
+
+      return elementRef.current.querySelectorAll(".animated-letter");
     };
-  
-    if (titleRef.current && subtitleRef.current && buttonRef.current) {
-      const titleWords = animateByWord(titleRef);
-      const subtitleWords = animateByWord(subtitleRef);
-  
-      gsap.to(titleWords, {
+
+    if (titleRef.current) {
+      const titleLetters = animateByLetter(titleRef);
+
+      gsap.to(titleLetters, {
         opacity: 1,
         y: 0,
         duration: 0.6,
-        stagger: 0.08,
+        stagger: 0.2,
         ease: "power3.out",
-        scrollTrigger: {
-          trigger: titleRef.current,
-          start: "top 75%",
-          toggleActions: "play none none none",
-        },
       });
-  
-      gsap.to(subtitleWords, {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        stagger: 0.08,
-        ease: "power3.out",
-        delay: 0.5,
-        scrollTrigger: {
-          trigger: subtitleRef.current,
-          start: "top 75%",
-          toggleActions: "play none none none",
-        },
-      });
-  
-      // 👇 Animate button after text
-      gsap.fromTo(
-        buttonRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          delay: 1.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: subtitleRef.current,
-            start: "top 75%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
     }
   }, []);
 
-  const scrollToConnect = () => {
-    console.log("Scrolling to connect section");
-    // Scroll to the connect section smoothly
-    
-    const section = document.querySelector('.connect-section');
-    if(!section){
-      console.log("Section not found");
-      
-    }
-    if (section) {
-
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-  
   return (
     <div className="contactBanner">
-  {/* Background Video */}
-  <video
-    className="contactBanner-video"
-    autoPlay
-    muted
-    loop
-    playsInline
-  >
-    <source src="/assets/ContactBannerVideo.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-
-  <div className="contactBanner-overlay">
-    <div className="contactBanner-content">
-      <h1 className="contactBanner-title" ref={titleRef} style={{ color: "white" }}>
-        Connect With Us – Your IT Solutions Partner
-      </h1>
-      <h2 className="contactBanner-subtitle" ref={subtitleRef}>
-        Have a question or need IT support? Our team is here to help. Let's work together to build reliable and scalable technology solutions for your business.
-      </h2>
-      <Link to="/contact#form" onClick={scrollToConnect} className="contactBanner-cta" ref={buttonRef}>
-        Get in Touch
-      </Link>
+      <div className="contactBanner-overlay">
+        <div className="contactBanner-content">
+          <h1 className="contactBanner-title" ref={titleRef}>
+            Contact Us
+          </h1>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
   );
 };
 

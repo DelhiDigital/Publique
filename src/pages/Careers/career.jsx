@@ -84,18 +84,18 @@ const CareerPage = () => {
           </div>
         </section>
 
-        {/* Section - Why Join Us */}
-        <section className="career-why-join-section fade-in">
-          <div className="why-join-content">
-            <h2>Why Join Us?</h2>
-            <p>
-              At Lexicon Computers, we value our people and their growth. Our work environment encourages creativity, innovation, and collaboration.
-              Join us and grow your career with the best mentors in the industry.
-            </p>
-          </div>
-        </section>
+        { /* Section - Why Join Us */} 
+          <section className="career-why-join-section fade-in">
+            <div className="why-join-content">
+              <h2>Why Join Us?</h2>
+              <p>
+                At <strong>Publiqua</strong>, we value our <strong>people</strong> and their <strong>growth</strong>. Our work environment encourages <strong>creativity</strong>, <strong>innovation</strong>, and <strong>collaboration</strong>.
+                Join us and grow your <strong>career</strong> with the best <strong>mentors</strong> in the industry. We offer <strong>exciting opportunities</strong>, a <strong>supportive culture</strong>, and the chance to make a <strong>real impact</strong> in the world of <strong>technology</strong>.
+              </p>
+            </div>
+          </section>
 
-        {/* Section - Life at Lexicon */}
+          {/* Section - Life at Lexicon */}
         {/* <section className="career-life-section fade-in">
           <div className="life-content">
             <div className="life-text">

@@ -1,5 +1,30 @@
-body {
+/* Root CSS Template */
+:root {
+    /* Define your CSS variables here */
+    --primary-color: #DC1F26;
+    --secondary-color: #ED666D;
+    --lighter-color: #F59AA3;
+    --font-family: "Koho family";
+    --base-padding: 16px;
+    --base-margin: 16px;
+}
+p{
+ --font-family: "lato family";
+}
+
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
+    background: #fff;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }

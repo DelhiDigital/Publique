@@ -127,17 +127,12 @@ const OurServices2 = () => {
             <span className="ourServices2__title-line" ref={line1Ref}>Publiqua Public Relation</span>
             <span className="ourServices2__title-line" ref={line2Ref}>For Tomorrow</span>
           </h2>
-          {/* <p className="ourServices2__description" ref={descRef}>
-            An Award-Winning Full-Service PR, Digital Marketing, and Creative Agency. Driving Brand Visibility, 
-            Engagement, and Growth for India’s Fastest-Growing Companies
-          </p> */}
           <p className="ourServices2__description" ref={descRef}>
-           As a premier comprehensive marketing communications powerhouse, we specialise in 
-           delivering bold, tailored solutions that position your brand ahead of the curve. 
-           With a proven track record of shaping industry leaders and turning challenges 
-           into opportunities, we partner with ambitious brands,companies leaduers and 
-           founders to transform ideas into actionable outcomes. We go beyond the ordinary
-            to ensure your brand isn’t just noticed—it’s unforgettable.
+            As a premier <strong>comprehensive marketing communications powerhouse</strong>, we specialise in 
+            delivering <strong>bold, tailored solutions</strong> that position your brand <strong>ahead of the curve</strong>. 
+            With a proven track record of <strong>shaping industry leaders</strong> and turning <strong>challenges into opportunities</strong>, 
+            we partner with <strong>ambitious brands</strong>, <strong>company leaders</strong> and founders to transform ideas into <strong>actionable outcomes</strong>. 
+            We go beyond the ordinary to ensure your brand isn’t just <strong>noticed</strong>—it’s <strong>unforgettable</strong>.
           </p>
         </div>
         <div className="ourServices2__image" style={{ '--custom-img-height': '380px' }}>
@@ -162,9 +157,9 @@ const OurServices2 = () => {
           </h2>
           <br />
           <p className="ourServices2__description" ref={desc2Ref}>
-            We transform businesses through cutting-edge digital solutions. Our expertise 
-            in emerging technologies and strategic innovation helps organizations stay ahead 
-            in today's rapidly evolving digital landscape.
+            We transform businesses through <strong>cutting-edge digital solutions</strong>. Our expertise 
+            in <strong>emerging technologies</strong> and <strong>strategic innovation</strong> helps organizations stay <strong>ahead</strong> 
+            in today's rapidly evolving <strong>digital landscape</strong>.
           </p>
         </div>
       </section>

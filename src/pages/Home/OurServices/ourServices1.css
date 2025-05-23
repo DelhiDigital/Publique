@@ -43,7 +43,7 @@
     font-weight: 700;
     /* margin-bottom: 2rem; */
     line-height: 1.2;
-    color: #b50d13;
+    color: var(--primary-color);
   }
   
   .ourServices2__title-line {
@@ -52,11 +52,11 @@
   }
   
   .ourServices2__title-line:first-child {
-    color: #b50d13;
+    color: var(--primary-color);
   }
   
   .ourServices2__title-line-purple {
-    color: #4d70b5;
+    color: var(--primary-color);
   }
   
   .ourServices2__title-line span {
@@ -68,8 +68,10 @@
   .ourServices2__description {
     font-size: 1.125rem;
     line-height: 1.8;
-    color: #666666;
+    color: rgb(21, 20, 20);
     margin-bottom: 2rem;
+    font-weight: 400;
+   
   }
   
   @media (max-width: 1024px) {

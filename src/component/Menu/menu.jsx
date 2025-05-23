@@ -134,10 +134,10 @@ const Menu = () => {
                   </ul>
                 </li>
                 <li className={`menu-item ${isActive('/career') ? 'active' : ''}`}>
-                  <Link to="#" className={isActive('/career') ? 'active' : ''}>Careers</Link>
+                  <Link to="/career" className={isActive('/career') ? 'active' : ''}>Careers</Link>
                 </li>
                 <li className={`menu-item ${isActive('/contact') ? 'active' : ''}`}>
-                  <Link to="#" className={isActive('/contact') ? 'active' : ''}>Contact</Link>
+                  <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contact</Link>
                 </li>
               </ul>
             </nav>

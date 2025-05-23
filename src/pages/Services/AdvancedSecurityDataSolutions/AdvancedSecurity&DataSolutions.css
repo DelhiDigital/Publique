@@ -25,7 +25,7 @@
 
 .asd-text h2 {
   font-size: 3rem;
-  color: #4d70b5;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .asd-icon {
-  color: #4d70b5;
+  color: var(--primary-color);
   flex-shrink: 0;
 }
 
@@ -72,7 +72,7 @@
   margin-top: 20px;
   padding: 14px 30px;
   font-size: 1.1rem;
-  background-color: #4d70b5;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 8px;

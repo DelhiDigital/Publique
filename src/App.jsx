@@ -4,8 +4,9 @@ import Menu from "./component/Menu/menu";
 import Footer from "./component/Footer/footer";
 import Home from "./pages/Home/home";
 import AboutPage from "./pages/About/aboutPage";
-// import ContactPage from './pages/Contact/contact';
-// import Careers from "./pages/Careers/career";
+import WhatsappButton from "./component/WhatsappButton/whatsappButton";
+import ContactPage from './pages/Contact/contact';
+import Careers from "./pages/Careers/career";
 
 // Service pages
 // import NetworkingAndITSolutions from './pages/Services/NetworkingSolutions/networkingSolutions';
@@ -22,8 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
-        {/* <Route path="/contact" element={<ContactPage />} />
-        <Route path="/career" element={<Careers />} /> */}
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/career" element={<Careers />} />
 
         {/* 👇 Individual submenu routes under /services */}
         {/* <Route path="/services/PublicRelations&StrategicCommunications" element={<NetworkingAndITSolutions />} />
@@ -35,6 +36,7 @@ function App() {
         
       </Routes>
       <Footer />
+      <WhatsappButton />
     </Router>
   );
 }

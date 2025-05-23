@@ -136,10 +136,6 @@ ul {
   transition: transform 0.3s;
 }
 
-/* .menu-item:hover .dropdown-icon {
-  transform: rotate(180deg);
-} */
-
 /* Submenu styles */
 .submenu {
   position: absolute;
@@ -159,16 +155,7 @@ ul {
   gap: 20px;
   z-index: 1001;
 }
-/* .submenu-item:hover .service-icon {
-  rotate: 90deg;
-  transition: rotate 0.6s ease-in-out;
-  width: 60px;
- 
- } */
- /* .submenu-item .service-icon {
-  transition: rotate 0.6s ease-in-out;
- 
- } */
+
 .menu-item:hover .submenu {
   opacity: 1;
   visibility: visible;
@@ -177,10 +164,8 @@ ul {
 .submenu-item {
   position: relative;
   overflow: hidden;
-  transition: rotate 0.6s ease-in-out;
 }
 
-/* Updated submenu styling to match the screenshot */
 .submenu-item > a {
   display: flex;
   align-items: center;
@@ -195,12 +180,10 @@ ul {
   position: relative;
 }
 
-/* Remove the ::before pseudo-element that was causing issues */
 .submenu-item > a::before {
   display: none;
 }
 
-/* New hover style to match the screenshot */
 .submenu-item > a:hover,
 .submenu-item.active > a {
   background-color: #ED666D;
@@ -217,13 +200,6 @@ ul {
   color: #b50d13;
   transition: all 0.3s ease;
 }
-
-/* .service-icon:hover {
- rotate: 90deg;
- transition: rotate 0.4s;
- width: 60px;
-
-} */
 
 .submenu-item > a:hover .service-icon,
 .submenu-item.active > a .service-icon {
@@ -295,12 +271,6 @@ ul {
   font-size: 16px;
 }
 
-.mobile-menu-item.active > a,
-.mobile-menu-item.active .menu-item-header {
-  color: #4d70b5;
-  background-color: rgba(77, 112, 181, 0.1);
-}
-
 .menu-item-header {
   cursor: pointer;
 }
@@ -310,10 +280,7 @@ ul {
   transition: transform 0.3s;
 }
 
-.mobile-menu .dropdown-icon.open {
-  /* transform: rotate(180deg); */
-}
-
+/* Mobile submenu */
 .mobile-submenu {
   background-color: #f9f9f9;
 }
@@ -330,15 +297,27 @@ ul {
   transition: all 0.3s ease;
 }
 
+.mobile-submenu-item .service-icon {
+  color: #b50d13;
+  transition: all 0.3s ease;
+}
+
 .mobile-submenu-item > a:hover,
 .mobile-submenu-item.active > a {
-  background: #4d70b5;
+  background: #ED666D;
   color: white;
 }
 
 .mobile-submenu-item > a:hover .service-icon,
 .mobile-submenu-item.active > a .service-icon {
   color: white;
+}
+
+/* Mobile active item style (main menu) */
+.mobile-menu-item.active > a,
+.mobile-menu-item.active .menu-item-header {
+  color: #b50d13;
+  background-color: rgba(181, 13, 19, 0.08);
 }
 
 .menu-overlay {
@@ -359,23 +338,24 @@ ul {
   visibility: visible;
 }
 
+/* Responsive styles */
 @media (max-width: 1024px) {
   .desktop-nav {
     display: none;
   }
-  
+
   .mobile-nav {
     display: block;
   }
-  
+
   .top-bar {
     display: none;
   }
-  
+
   .menuLogo img {
     height: 55px;
   }
-  
+
   .container {
     height: 50px;
   }

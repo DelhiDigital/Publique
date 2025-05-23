@@ -10,7 +10,7 @@ const ContactPage = () => {
         <>
             <ContactBanner />
             <div className="contactPage__container">
-                <h1 className="contactPage__heading">Find Your Way To Our Doorstep</h1>
+                <h1 className="contactPage__heading">Reach Out and Visit</h1>
 
                 <div className="contactPage__content">
 
@@ -28,12 +28,12 @@ const ContactPage = () => {
                             <div className="contactPage__row">
                                 <span className="contactPage__icon">🌐</span>
                                 <a
-                                    href="https://www.lexiconindia.com"
+                                    href="https://publiqua.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="contactPage__link"
                                 >
-                                    www.lexiconindia.com
+                                    www.publiqua.com
                                 </a>
                             </div>
 
@@ -41,10 +41,10 @@ const ContactPage = () => {
                             <div className="contactPage__row">
                                 <span className="contactPage__icon">✉️</span>
                                 <a
-                                    href="mailto:info@lexiconindia.com"
+                                    href="mailto:info@publiqua.com"
                                     className="contactPage__link"
                                 >
-                                    info@lexiconindia.com
+                                    info@publiqua.com
                                 </a>
                             </div>
 
@@ -52,9 +52,9 @@ const ContactPage = () => {
                             <div className="contactPage__row">
                                 <span className="contactPage__icon">📍</span>
                                 <p className="contactPage__text">
-                                    24, Papa Industrial Estate, 3rd Floor,<br />
-                                    40, Suren Road, Off Andheri-Kurla Road,<br />
-                                    Andheri (East), Mumbai – 400093.
+                                    42,saiudual haq, 4rth Floor,<br />
+                                    mehrauli Road, delhi, new delhi india<br />
+                                    110030
                                 </p>
                             </div>
 
@@ -68,7 +68,7 @@ const ContactPage = () => {
                             rel="noopener noreferrer"
                         >
                             <iframe
-                                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.4094291624962!2d72.85515860089599!3d19.117260584691874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8397b13ee17%3A0x6cbaa15c75b5c01c!2sLexicon%20Computers%20Private%20Limited!5e0!3m2!1sen!2sin!4v1744621081747!5m2!1sen!2sin' width="100%"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.577761328493!2d77.200830674447!3d28.51968867572647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b07026ba363%3A0xd4c5b999d660acd4!2sDelhi%20Digital%20Co.!5e1!3m2!1sen!2sin!4v1747963353578!5m2!1sen!2sin" width="100%"
                                 height="400"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
@@ -80,15 +80,11 @@ const ContactPage = () => {
                     </div>
                 </div>
             </div>
-
+{/* 
             <section className="panIndia__section">
                 <div className="panIndia__wrapper">
-
-
-                    {/* Right Side - Description */}
                     <div className="panIndia__content">
                         <h2 className="panIndia__title">Our Pan India Presence</h2>
-                        {/* <hr className="panIndia__line" /> */}
                         <p className="panIndia__text">
                             With offices at strategic locations, we are equipped to assist clients on time, every time!
                             Our widespread network enables us to provide personalized support, ensuring we are always within reach.
@@ -96,12 +92,11 @@ const ContactPage = () => {
                         </p>
                     </div>
 
-                    {/* Left Side - Map Image */}
                     <div className="panIndia__map">
                         <img src="/assets/indianMap.jpg" alt="Lexicon Offices Across India" />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <div id='form'>
                 <ConnectWithUs />
