@@ -1,8 +1,6 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
-import "./CaseStudy.css"
+import "./caseStudy.css"
 
 const CaseStudy = () => {
   const [selectedCase, setSelectedCase] = useState(null)
