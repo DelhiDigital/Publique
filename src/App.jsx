@@ -4,7 +4,7 @@ import Menu from "./component/Menu/menu";
 import Footer from "./component/Footer/footer";
 import Home from "./pages/Home/home";
 import AboutPage from "./pages/About/aboutPage";
-import WhatsappButton from "./component/WhatsappButton/whatsappButton";
+import WhatsappButton from "./component/WhatsappButton/WhatsAppButton";
 import ContactPage from './pages/Contact/contact';
 import Careers from "./pages/Careers/career";
 
