@@ -107,17 +107,17 @@ const Menu = () => {
           ) : (
             <nav className="desktop-nav">
               <ul className="main-menu">
-                <li className={`menu-item ${isActive('/') ? 'active' : ''}`}>
+                {/* <li className={`menu-item ${isActive('/') ? 'active' : ''}`}>
                   <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
-                </li>
+                </li> */}
                 <li className={`menu-item ${isActive('/about') ? 'active' : ''}`}>
                   <Link to="/about" className={isActive('/about') ? 'active' : ''}>About Us</Link>
                 </li>
-                <li className={`menu-item`}>
-                  <Link to="/" state={{ scrollTo: 'case-studies' }}>
-                    Case Studies
-                  </Link>
+                
+                <li className={`menu-item ${isActive('/Ourexpertise') ? 'active' : ''}`}>
+                  <Link to="/Ourexpertise" className={isActive('/Ourexpertise') ? 'active' : ''}>Our expertise</Link>
                 </li>
+
                 <li className={`menu-item ${location.pathname.includes('/services') ? 'active' : ''}`}>
                   <span className="menu-label">
                     Services <FaChevronDown className="dropdown-icon" />
@@ -133,8 +133,13 @@ const Menu = () => {
                     ))}
                   </ul>
                 </li>
-                <li className={`menu-item ${isActive('/career') ? 'active' : ''}`}>
+                {/* <li className={`menu-item ${isActive('/career') ? 'active' : ''}`}>
                   <Link to="/career" className={isActive('/career') ? 'active' : ''}>Careers</Link>
+                </li> */}
+                <li className={`menu-item`}>
+                  <Link to="/" state={{ scrollTo: 'case-studies' }}>
+                    Case Studies
+                  </Link>
                 </li>
                 <li className={`menu-item ${isActive('/contact') ? 'active' : ''}`}>
                   <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contact</Link>

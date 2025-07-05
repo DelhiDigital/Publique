@@ -89,7 +89,7 @@ const Footer = () => {
             <li><ChevronRight size={14} /><Link to="/">Home</Link></li>
             <li><ChevronRight size={14} /><Link to="/about">About Us</Link></li>
             <li><ChevronRight size={14}/><Link to="/" state={{ scrollTo: 'case-studies' }}> Case Studies </Link></li>
-            <li><ChevronRight size={14} /><Link to="/careers">Careers</Link></li>
+            <li><ChevronRight size={14} /><Link to="/Ourexpertise">Our Expertise</Link></li>
             <li><ChevronRight size={14} /><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -106,14 +106,14 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-newsletter">
+        {/* <div className="footer-newsletter">
           <h3>Newsletter</h3>
           <p>Subscribe to our newsletter for the latest updates.</p>
           <div className="newsletter-form">
             <input type="email" placeholder="Your Email Address" />
             <button className="subscribe-btn">Subscribe</button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-bottom">

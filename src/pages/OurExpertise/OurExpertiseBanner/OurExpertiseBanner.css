@@ -1,8 +1,8 @@
-/* .careerBanner {
+.OurExpertiseBanner {
   position: relative;
   width: 100%;
   height: 70vh;
-  background-image: url('/assets/AboutBanner.png'); 
+  background-image: url('/assets/AboutBanner.png'); /* Change to your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,26 +20,26 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.careerBanner-overlay {
+.OurExpertiseBanner-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.careerBanner-content {
+.OurExpertiseBanner-content {
   color: rgb(244, 245, 245);
   padding: 0 20px;
   max-width: 800px;
 }
 
-.careerBanner-title {
+.OurExpertiseBanner-title {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -47,7 +47,7 @@
   white-space: pre-wrap;
 }
 
-.careerBanner-subtitle {
+.OurExpertiseBanner-subtitle {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 30px;
@@ -59,13 +59,13 @@
   transform: translateY(20px);
 }
 
-
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .careerBanner-title {
+  .OurExpertiseBanner-title {
     font-size: 2.2rem;
   }
 
-  .careerBanner-subtitle {
+  .OurExpertiseBanner-subtitle {
     font-size: 1rem;
   }
-} */
+}

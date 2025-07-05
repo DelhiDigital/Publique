@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import ConnectWithUs from "../Home/ConnectWithUs/connectwithUs.jsx";
+import ConnectNowSection from '../Home/Connectnowsection/connectnowsection.jsx';
 import ContactBanner from './ContactBanner/contactBanner.jsx';
 
 
@@ -99,7 +99,7 @@ const ContactPage = () => {
             </section> */}
 
             <div id='form'>
-                <ConnectWithUs />
+                <ConnectNowSection />
             </div>
         </>
     );

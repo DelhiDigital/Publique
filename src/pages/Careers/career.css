@@ -1,4 +1,4 @@
-/* Section 1 - Form */
+/* 
 .career-form-section {
     padding: 50px;
     background: #f5f5f5;
@@ -48,7 +48,7 @@
     background-color: #090a0a;
 }
 
-/* Section 2 - Why Join Us */
+
 .career-why-join-section {
     padding: 50px;
     background: linear-gradient(90deg, rgb(25, 25, 25), #5b5c5d);
@@ -77,7 +77,7 @@
 }
 
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .career-banner-content h1 {
         font-size: 36px;
@@ -100,7 +100,7 @@
     }
 }
 
-/* Section - Life at Lexicon */
+
 .career-life-section {
     padding: 60px 20px;
     background: #ffffff;
@@ -152,7 +152,7 @@
     border-radius: 10px;
   }
   
-  /* Responsive */
+ 
   @media (max-width: 768px) {
     .life-content {
       flex-direction: column;
@@ -167,4 +167,4 @@
       flex: 1 1 100%;
     }
   }
-  
+   */

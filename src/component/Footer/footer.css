@@ -10,7 +10,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1.5fr 1.2fr;
+  grid-template-columns: 2.5fr 2fr 2fr 0fr;
   gap: 40px;
   padding: 0 20px 40px;
 }
@@ -237,7 +237,7 @@
 
 .popup-content form input,
 .popup-content form textarea,
-.popup-content form button {
+.footer-popup-content form button {
   width: 100%;
   margin-bottom: 10px;
   padding: 10px;
@@ -251,14 +251,14 @@
   min-height: 100px;
 }
 
-.popup-content form button {
+.footer-popup-content form button {
   background-color: #b50d13;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.popup-content form button:hover {
+.footer-popup-content form button:hover {
   background-color: #da4a52;
   color: black;
 }

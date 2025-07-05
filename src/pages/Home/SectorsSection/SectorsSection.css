@@ -21,8 +21,9 @@
 /* Rest of your CSS remains unchanged */
 /* Using unique class names with "sector-module-" prefix to avoid conflicts */
 .sector-module-section {
-  padding: 80px 0;
+  /* padding: 80px 0; */
   background-color: #ffffff;
+  padding-bottom: 50px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -144,7 +145,7 @@
 .sector-module-prefix {
   font-size: 14px;
   font-weight: 500;
-  color: #ffd700;
+  color: #DC1F26;
   margin-bottom: 8px;
   display: block;
 }
@@ -240,7 +241,7 @@ sector-module-learn-more:hover {
 }
 
 .sector-module-show-all-button span {
-  color: #333;
+  color: #DC1F26;
 }
 
 .sector-module-button-arrow {
@@ -249,6 +250,7 @@ sector-module-learn-more:hover {
   height: 20px;
   margin-left: 8px;
   position: relative;
+   color: #DC1F26;
 }
 
 .sector-module-button-arrow.down::after {
@@ -258,8 +260,8 @@ sector-module-learn-more:hover {
   left: 50%;
   width: 10px;
   height: 10px;
-  border-right: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
+  border-right: 2px solid #DC1F26;
+  border-bottom: 2px solid #DC1F26;
   transform: translate(-50%, -75%) rotate(45deg);
 }
 
@@ -270,8 +272,8 @@ sector-module-learn-more:hover {
   left: 50%;
   width: 10px;
   height: 10px;
-  border-right: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
+  border-right: 2px solid #DC1F26;
+  border-bottom: 2px solid #DC1F26;
   transform: translate(-50%, -25%) rotate(-135deg);
 }
 
