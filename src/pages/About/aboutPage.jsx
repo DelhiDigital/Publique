@@ -1,5 +1,5 @@
 import AboutTeamSection from "./TeamsSection/aboutTeamSection";
-import MissionVisionSection from "./MissionVisionSection/missionVisionSection.jsx";
+// import MissionVisionSection from "./MissionVisionSection/missionVisionSection.jsx";
 // import OurClients from '../Home/OurClients/ourClients.jsx';
 // import WhatWeOffer from "./WhatWeOffer/whatWeOffer.jsx";
 // import ConnectWithUs from "../Home/ConnectWithUs/connectwithUs.jsx";
@@ -9,7 +9,7 @@ function AboutPage() {
     return (
         <>
         <AboutBanner />
-        <MissionVisionSection />
+        {/* <MissionVisionSection /> */}
         {/* <OurClients /> */}
         {/* <WhatWeOffer /> */}
         <AboutTeamSection />   
